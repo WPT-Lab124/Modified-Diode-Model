@@ -19,7 +19,7 @@ If you require any further information or if we can be of any assistance, feel f
 │   │   ├── Device.m                   <- Device class for defining perovskite PV parameters
 │   └── Utils
 │   │   ├── costFunction.m             <- Function for computing the cost function
-│   │   ├── fittingMD.m               <- Function for curve fitting with the MD model
+│   │   ├── fittingMD.m                <- Function for curve fitting with the MD model
 │   │   ├── lossAnalysis.m             <- Function for evaluating the normalized PCE gains
 │   │   ├── plotJrecV.m                <- Function for plotting the J(recombination)-V curves
 │   │   ├── plotJV.m                   <- Function for plotting the J-V curves
