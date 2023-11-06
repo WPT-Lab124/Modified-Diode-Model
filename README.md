@@ -1,4 +1,4 @@
-# Modified Detailed Balance Model
+# Modified Diode Model
 ![License](https://img.shields.io/badge/license-GPL3.0-orange)
 ![Version](https://img.shields.io/github/v/release/WPT-Lab124/Modified-Diode-Model)
 [![Visits Badge](https://badges.strrl.dev/visits/WPT-Lab124/Modified-Diode-Model)](https://github.com/WPT-Lab124/Modified-Diode-Model)
