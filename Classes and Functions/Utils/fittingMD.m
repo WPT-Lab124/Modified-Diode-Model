@@ -1,12 +1,12 @@
-function retrievedParams = fittingMDB(device, dataJV)
+function retrievedParams = fittingMD(device, dataJV)
 % -------------------------------------------------------------------------
-% Curve fitting with modified detailed balance model
+% Curve fitting with modified diode model
 %
 % Arguments:
 %   device: a Device object containing relevant params
 %   dataJV: a table containing the voltage and current data
 % Return value:
-%   retrievedParams: lumped parameters retrieved by MDB model
+%   retrievedParams: lumped parameters retrieved by MD model
 %
 % @ Author: Minshen Lin
 % @ Institution: Zhejiang University
