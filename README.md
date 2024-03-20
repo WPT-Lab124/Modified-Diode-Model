@@ -1,4 +1,11 @@
 # Modified Diode Model
+
+NEWS: 🔥Modified Diode Model is accepted by Solar RRL!🔥
+
+[Quantifying Nonradiative Recombination and Resistive Losses in Perovskite Photovoltaics: A Modified Diode Model Approach](https://onlinelibrary.wiley.com/doi/full/10.1002/solr.202300722)
+
+Minshen Lin, Xuehui Xu, Hong Tian, Yang (Michael) Yang, Wei E. I. Sha, Wenxing Zhong
+
 ![License](https://img.shields.io/badge/license-GPL3.0-orange)
 ![Version](https://img.shields.io/github/v/release/WPT-Lab124/Modified-Diode-Model)
 [![Visits Badge](https://badges.strrl.dev/visits/WPT-Lab124/Modified-Diode-Model)](https://github.com/WPT-Lab124/Modified-Diode-Model)
@@ -61,12 +68,24 @@ You can refer to these steps to write your own script, and follow the guidelines
 
 Besides, you can directly run the `single_dataset_fitting.m` or the `batch_dataset_fitting.m` to reproduce the results in our paper, and if you want to further explore the MD model with SCAPS-1D, you can use the `DataSet` and the `DataPreconditioner` classes to parse the simulated data.
 
-## Other Info
+## Citation
+If you find this work useful in your research, please cite:
+```
+@article{lin2024quantifying,
+  title={Quantifying Nonradiative Recombination and Resistive Losses in Perovskite Photovoltaics: A Modified Diode Model Approach},
+  author={Lin, Minshen and Xu, Xuehui and Tian, Hong and Yang, Yang and Sha, Wei EI and Zhong, Wenxing},
+  journal={Solar RRL},
+  volume={8},
+  number={1},
+  pages={2300722},
+  year={2024},
+  publisher={Wiley Online Library}
+}
+```
 
-Author of the repository: Minshen Lin
+## Other Info
+Repository Author: Minshen Lin
 
 Email: linminshen@zju.edu.cn
 
 Institution: Zhejiang University
-
-External link: The link of the paper will be updated after publication.
