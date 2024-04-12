@@ -1,6 +1,6 @@
 function plotJrecV(dataJV, calJV)
 % -------------------------------------------------------------------------
-% Plotting Jrec-V curves with the retrieved parameters from MDB model fitting.
+% Plotting Jrec-V curves with the retrieved parameters from MD model fitting.
 %
 % Arguments:
 %   dataJV --- a table containing V, J, Jbulk, Jf, and Jsh
