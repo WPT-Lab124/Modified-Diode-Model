@@ -1,12 +1,12 @@
 function calJV = solver(device, dataJV, retrievedParameters)
 % -------------------------------------------------------------------------
-% Solving JV curved with the retrieved parameters from MDB model fitting.
+% Solving JV curved with the retrieved parameters from MD model fitting.
 %
 % Arguments:
 %   device: a Device object containing relevant params
 %   dataJV: a table containing the voltage and current data
 %   retrievedParameters: an array containing [Rs, Rsh, Ubulk, Uif, nbulk,
-%     nif], i.e., the parameters in the MDB model.
+%     nif], i.e., the parameters in the MD model.
 % Return value:
 %   calJV: a table containing containing the calculated JV curves
 %
