@@ -1,4 +1,4 @@
-%% Script for applying the MDB model to one set of simulated JV data
+%% Script for applying the MD model to one set of simulated JV data
 % -------------------------------------------------------------------------
 % The JV data used in this script are simulated by SCAPS-1D. You can use
 % this script to reproduce the results in Fig. 1 of the paper.
@@ -29,7 +29,7 @@ end
 
 dataJV = DataPreconditioner(dataSet, perov).dataJV; % Data preconditioning
 
-retrievedParams = fittingMDB(perov, dataJV); % MDB model fitting
+retrievedParams = fittingMD(perov, dataJV); % MD model fitting
 
 calJV = solver(perov, dataJV, retrievedParams); % Numerically solve JV
 
