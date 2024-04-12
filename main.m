@@ -1,4 +1,4 @@
-%% Script for applying the MDB model to experimental JV data
+%% Script for applying the MD model to experimental JV data
 % -------------------------------------------------------------------------
 % The JV data used in this script are imported from an example file. You
 % can create a txt file containing your experimental JV data in the same
@@ -28,7 +28,7 @@ fileName = "/Experimental Data/passivated_reverse_scan.txt"; % Load data
 
 dataJV = DataPreconditioner(fileName).dataJV; % Data preconditioning
 
-retrievedParams = fittingMDB(perov, dataJV); % MDB model fitting
+retrievedParams = fittingMD(perov, dataJV); % MD model fitting
 
 calJV = solver(perov, dataJV, retrievedParams); % Numerically solve JV
 
