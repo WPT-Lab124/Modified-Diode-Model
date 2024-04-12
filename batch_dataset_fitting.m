@@ -1,4 +1,4 @@
-%% Script for applying the MDB model to a batch of simulated JV data
+%% Script for applying the MD model to a batch of simulated JV data
 % -------------------------------------------------------------------------
 % The JV data used in this script are simulated by SCAPS-1D. You can use
 % this script to reproduce the results in Fig. 4 of the paper.
@@ -61,10 +61,10 @@ for i = 1 : dataSet.numOfDataSets
     loadedJV = [dataV(dataRange), dataJ(dataRange), dataJbulk(dataRange), dataJif(dataRange)];
     dataJV = DataPreconditioner(loadedJV).dataJV; % [V] and [A/cm2]
     
-    % MDB model fitting for the following parameters:
+    % MD model fitting for the following parameters:
     % [Rs, Rsh, ybulk, Uif, nbulk, nif] --- [Ohm*cm2, Ohm*cm2, /s, /cm2/s, 1, 1]
     perov.tBulk = 1 / 2 / yBulk(i);
-    retrievedParams = fittingMDB(perov, dataJV);
+    retrievedParams = fittingMD(perov, dataJV);
     
     % Numerically solve JV
     calJV = solver(perov, dataJV, retrievedParams);
@@ -73,7 +73,7 @@ for i = 1 : dataSet.numOfDataSets
     cost(i, 1) = costFunction(dataJV, calJV);
 end
 
-%% Evaluate MDB performance over the entire data set
+%% Evaluate MD performance over the entire data set
 bulkDefectDensitySim = dataSet.bulkDefectDensity;
 ifDefectDensitySim = dataSet.ifDefectDensity;
 
