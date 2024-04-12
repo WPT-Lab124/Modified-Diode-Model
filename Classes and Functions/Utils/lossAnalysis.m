@@ -2,9 +2,9 @@ function PCEs = lossAnalysis(dataJV, calJV, device, retrievedParams)
 %--------------------------------------------------------------------------
 % In this method, the effect of each loss pathway is quantified by the PCE
 % gain after excluding it. The PCE excluding one specific loss pathway,
-% e.g. Rs, can be calculated by setting the value of Rs to zero in the MDB
+% e.g. Rs, can be calculated by setting the value of Rs to zero in the MD
 % model. Likewise, the overall PCE gain can be calculated by setting all the
-% parameters of interest in the MDB model to zero or infinity (for Rsh),
+% parameters of interest in the MD model to zero or infinity (for Rsh),
 % denoting the highest PCE that can be possibly achieved. All PCE values
 % are evaluated at maximum power points.
 %
@@ -12,9 +12,9 @@ function PCEs = lossAnalysis(dataJV, calJV, device, retrievedParams)
 %     dataJV: a table containing the voltage and current data
 %     calJV: a table containing containing the calculated JV curves
 %     retrievedParams: an array containing [Rs, Rsh, Ubulk, Uif, nbulk,
-%     nif], i.e., the parameters in the MDB model. 
+%     nif], i.e., the parameters in the MD model. 
 % @ Return value:
-%     PCEs: PCE values calculated by the MDB model for the initial device,
+%     PCEs: PCE values calculated by the MD model for the initial device,
 %     device excluding each loss pathway, and device excluding all loss
 %     pathways.
 % 
