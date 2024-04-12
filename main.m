@@ -2,7 +2,7 @@
 % -------------------------------------------------------------------------
 % The JV data used in this script are imported from an example file. You
 % can create a txt file containing your experimental JV data in the same
-% format, and apply the MDB model to your data by specifying the `fileName`
+% format, and apply the MD model to your data by specifying the `fileName`
 % variable.
 %
 % @ Author: Minshen Lin
