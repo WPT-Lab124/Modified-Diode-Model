@@ -1,12 +1,12 @@
 function plotJV(dataJV, calJV, retrievedParameters)
 % -------------------------------------------------------------------------
-% Plotting JV curves with the retrieved parameters from MDB model fitting.
+% Plotting JV curves with the retrieved parameters from MD model fitting.
 %
 % Arguments:
 %   dataJV: a table containing the voltage and current data
 %   calJV: a table containing containing the calculated JV curves
 %   retrievedParameters: an array containing [Rs, Rsh, Ubulk, Uif, nbulk,
-%     nif], i.e., the parameters in the MDB model.
+%     nif], i.e., the parameters in the MD model.
 %
 % @ Author: Minshen Lin
 % @ Institution: Zhejiang University
